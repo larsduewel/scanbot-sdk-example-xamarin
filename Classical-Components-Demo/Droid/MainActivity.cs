@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Threading.Tasks;
 
 using Android.App;
@@ -23,7 +24,6 @@ using IO.Scanbot.Sdk.UI.View.Barcode;
 using IO.Scanbot.Sdk.Barcode.Entity;
 using ClassicalComponentsDemo.Droid.Activities;
 using ClassicalComponentsDemo.Droid.Utils;
-
 using JetBrains.Annotations;
 
 namespace ClassicalComponentsDemo.Droid
