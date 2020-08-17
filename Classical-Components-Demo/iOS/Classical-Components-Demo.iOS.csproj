@@ -90,6 +90,9 @@
     <Reference Include="ScanbotSDK.Xamarin.iOS">
       <HintPath>..\packages\ScanbotSDK.Xamarin.2.0.0\lib\Xamarin.iOS10\ScanbotSDK.Xamarin.iOS.dll</HintPath>
     </Reference>
+    <Reference Include="JetBrains.Annotations">
+      <HintPath>..\packages\JetBrains.Annotations.2020.1.0\lib\netstandard2.0\JetBrains.Annotations.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />

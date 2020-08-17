@@ -24,6 +24,8 @@ using IO.Scanbot.Sdk.Barcode.Entity;
 using ClassicalComponentsDemo.Droid.Activities;
 using ClassicalComponentsDemo.Droid.Utils;
 
+using JetBrains.Annotations;
+
 namespace ClassicalComponentsDemo.Droid
 {
     [Activity(Label = "Scanbot SDK Example Xamarin", MainLauncher = true, Icon = "@mipmap/icon", 
@@ -73,6 +75,7 @@ namespace ClassicalComponentsDemo.Droid
         {
             var copyrightTextView = FindViewById<TextView>(Resource.Id.copyrightTextView);
             copyrightTextView.Text = "Copyright (c) "+DateTime.Now.Year.ToString()+" doo GmbH. All rights reserved.";
+            //Console.WriteLine
         }
 
         void AssignStartCameraButtonHandler()
@@ -530,6 +533,15 @@ namespace ClassicalComponentsDemo.Droid
 
             return builder.Create();
         }
+
+        static string HelloWorld([NotNull]string name)
+        {
+            if (name == null) throw new ArgumentNullException(nameof(name));
+            return $"Hello, {name}";
+        }
+
+
+
     }
 }
 
